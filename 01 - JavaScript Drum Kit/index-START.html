@@ -67,6 +67,14 @@ window.addEventListener('keydown', function(e) {
   key.classList.toggle('playing');
   
 });
+
+function removeTransition(e) {
+  console.log(e);
+};
+  
+const keys = document.querySelectorAll('.key');  
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  
 </script>
 
 
